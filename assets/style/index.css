@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Roboto", sans-serif;
+  --font-size: 1rem;
+  --font-size-big: 1.2rem;
+  --font-size-small: 0.9rem;
+
+  --background-color: #fff;
+  --secondary-background-color: #d6d6d6;
+  --ternary-background-color: #afafaf;
+  --active-background: #fff9ea;
+
+  --text-color: #040404;
+  --secondary-text-color: #262626;
+  --ternary-text-color: #454545;
+
+  --instance-background: linear-gradient(0deg, #f7feff, #fff 70%);
+  --instance-border: #91a8c1;
+  --instance-hover-background: linear-gradient(0deg, #d6fcff, #fff 90%);
+  --instance-hover-border: #91a8c1;
+
+  --item-background: #fff;
+  --border-color: #c8c8c8;
+
+  --accent-saturation: 65%;
+  --accent-brightness: 100%;
+
+  --icon-fill: 0;
+  --icon-weight: 400;
+  --icon-emphasis: 0;
+  --icon-optical-size: 24;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--font);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' var(--icon-fill),
+    'wght' var(--icon-weight),
+    'GRAD' var(--icon-emphasis),
+    'opsz' var(--icon-optical-size);
+}

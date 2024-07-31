@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "esbuild --bundle src/index.ts --outfile=dist/index.js --loader:.html=text --loader:.svg=dataurl",
+    "dev": "esbuild --bundle src/index.ts --outfile=dist/index.js --loader:.html=text --loader:.svg=dataurl --watch"
+  },
+  "devDependencies": {
+    "web-ext-types": "^3.2.1"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "manifest_version": 2,
+
+  "name": "Infinite Craft Plus",
+  "short_name": "IC+",
+  "author": "zeroptr",
+  "version": "0.1",
+
+  "description": "The new Infinite Craft.",
+  "homepage_url": "https://github.com/InfiniteCraftCommunity/InfiniteCraftPlus",
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "infinitecraftplus@zptr.cc",
+      "strict_min_version": "42.0"
+    }
+  },
+
+  "icons": {
+    "48": "assets/icon/48.png",
+    "96": "assets/icon/96.png",
+    "192": "assets/icon/192.png"
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "unlimitedStorage",
+    "*://neal.fun/"
+  ],
+
+  "host_permissions": [
+    "*://neal.fun/"
+  ],
+
+  "background": {
+    "scripts": [
+      "lib/webextension-polyfill.js",
+      "background/block-ic-scripts.js"
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://neal.fun/infinite-craft/*"],
+      "run_at": "document_start",
+      "css": [
+        "assets/style/theme.css",
+        "assets/style/index.css"
+      ],
+      "js": [
+        "lib/webextension-polyfill.js",
+        "dist/index.js"
+      ]
+    }
+  ]
+}
