@@ -15,6 +15,22 @@
   * [ ] Animted Background
   * [ ] Board panning
   * [ ] Preserve the board when you close the game and return back later
+- [ ] Settings
+  * [ ] A good way to add the settings menu would be to use the extension's toolbar button: open InfiniteCraft on click, and if already open, open the settings menu
+  * [ ] Appearance settings
+    - [ ] Sidebar position
+    - [ ] Background animation: full (particles and lines), optimized (CSS-only particles like on InfiniBrowser's main page), and none
+    - [ ] Emoji Font (twemoji, noto color emoji or system)
+    - [ ] Text Font
+    - [ ] Icon Style (outlined/filled and the weight)
+    - [ ] Themes
+  * [ ] Custom Keybinds
+  * [ ] Mod and Theme List
+    - [ ] Every extension will have an unique identifier like `extension@developer`
+    - [ ] Developers will be able to submit their mods or themes to a GitHub repo
+    - [ ] Users will be able to install them with a click of a button
+    - [ ] Users will be able to leave their reviews on extensions (from 1 to 5 stars)
+    - [ ] Sorting by download counts and popularity
 - [ ] Port [Save File Analyzer](https://infinibrowser.zptr.cc/analyzer)
   * [ ] Store the depth for all recipes and elements in the savefile.
     - Do not include it when exporting, as analyzer's algorithm is pretty good and can load a very large savefile in just a few seconds. The extension's storage is unlimited so it shouldn't matter much.
