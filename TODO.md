@@ -42,5 +42,6 @@
       * "Get all base elements starting from just [some element]"
       * "Get all base elements starting in a different language?"
       * "Get [some element] in under [N] steps"
+    - Every time a challenge is completed, store the used elements and recipes, and if someone else used the exact same route in the past, reward much less XP. (more people using the route = less XP)
   * [ ] Account system and Leaderboards
     - Also, badges?
